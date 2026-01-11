@@ -1,0 +1,717 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    position: relative;
+    height: 925px;
+
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+}
+
+.main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/main\ img.jpg') center center / cover no-repeat;
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    opacity: 0.4;
+    /* This makes the background image 50% transparent */
+    z-index: -1;
+}
+
+nav {
+    display: flex;
+    margin-left: 400px;
+    justify-content: space-between;
+    margin-right: 300px;
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
+
+
+}
+
+
+
+select {
+    padding: 8px 12px;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.877);
+    /* Semi-transparent black */
+    color: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Dropdown Arrow Styling */
+select::-ms-expand {
+    display: none;
+    /* Hides default arrow in IE/Edge */
+}
+
+select:hover {
+    background-color: rgba(32, 23, 23, 0.2);
+    /* Slight hover effect */
+    color: black;
+}
+
+/* Style for Sign In button */
+.btn2 {
+    padding: 10px 20px;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+.btn2:hover {
+    background-color: rgba(255, 10, 10, 0.541);
+}
+
+nav img {
+    color: red;
+    width: 200px;
+    position: relative;
+    z-index: 10;
+    margin-top: 20px;
+
+}
+
+.div {
+    color: white;
+    font-size: 400px;
+    padding: 100px;
+    margin-left: 300px;
+}
+
+.para {
+    font-family: 'Martel Sans', sans-serif;
+    height: calc(100%-100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+
+    padding: 250px;
+    flex-direction: column;
+
+}
+
+.para>:nth-child(1) {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 65px;
+    text-align: center;
+}
+
+.para>:nth-child(2) {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 65px;
+    text-align: center;
+}
+
+.para> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.para> :nth-child(4) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+input {
+    background-color: rgba(8, 8, 8, 0.582);
+    color: white;
+    width: 550px;
+    padding: 15px;
+    font-size: 25px;
+    border-color: white;
+    font-weight: bold;
+
+}
+
+.btn3 {
+    padding: 10px 20px;
+    padding: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+.curved-section {
+    position: relative;
+    height: 6.25rem;
+    overflow-x: hidden;
+    z-index: 1;
+}
+
+.curved-bg {
+    position: absolute;
+    top: 0;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 0.25rem solid transparent;
+    border-top-left-radius: 70% 100%;
+    border-top-right-radius: 70% 100%;
+    background: radial-gradient(50% 500% at 50% -420%, rgba(78, 12, 231, 0.4) 80%, rgba(10, 2, 22, 0.247) 100%), rgb(7, 3, 34);
+    background-clip: padding-box;
+    margin-top: 900PX;
+    border-top: 2PX SOLID red;
+}
+
+@media (min-width:960PX) {
+    .curved-section {
+        margin-top: 1.25rem;
+    }
+}
+
+/* .second page{
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    margin-left: 250px;} */
+
+.first {
+    margin-top: -90px;
+    color: white;
+    margin-left: 300px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.second {
+    margin-left: 280px;
+    padding: 20px;
+
+
+}
+
+.boxes {
+    width: 1000px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+/* .Scale {
+    transform: scale(1, 1);
+    transition: transform 0.5s ease;
+  } */
+/* .nav-btn {
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: lightgray;
+    cursor: pointer;
+    
+}
+
+.back::before {
+    content: "◀ ";
+}
+
+.next::after {
+    content: " ▶";
+} */
+img {
+    transition: transform 0.5s ease;
+}
+
+img:hover {
+    transform: scale(1.2);
+    /* Increases size by 20% */
+}
+
+.img1 {
+    border: solid black;
+    border-radius: 15px;
+    transition: transform 0.5s ease;
+}
+
+
+
+
+
+.img2 {
+    border: solid black;
+    border-radius: 15px;
+    margin-left: 35px;
+
+}
+
+.img3 {
+    border: solid black;
+    border-radius: 15px;
+    margin-left: 35px;
+
+}
+
+.img4 {
+    border: solid black;
+    border-radius: 15px;
+    margin-left: 35px;
+
+}
+
+.img5 {
+    border: solid black;
+    border-radius: 15px;
+    margin-left: 35px;
+
+}
+
+.third {
+    margin-top: 480px;
+    color: white;
+    margin-left: 300px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.container {
+
+    height: 1020px;
+    width: 1500px;
+    display: flex;
+    margin-left: 280px;
+
+
+    margin-right: 500px;
+    /* align-content: center; */
+    /* border: 2px solid black; */
+
+}
+
+.box {
+    /* height:500px;
+    width:700px; */
+    border: 2px rgb(240, 228, 228);
+    margin-left: 20px;
+    /* align-items: center;
+    justify-content: center; */
+    background: linear-gradient(90deg, rgb(92, 17, 12), rgb(1, 1, 59), rgb(36, 4, 110));
+}
+
+.box1 {
+    width: 300px;
+    height: 350px;
+    font-size: 25px;
+    /* flex-grow: 3; */
+    margin-top: 15px;
+    text-align: center;
+    align-items: center;
+    padding-top: 25px;
+    color: white;
+    font-weight: bolder;
+    border-radius: 20px;
+}
+
+.box2 {
+    width: 300px;
+    height: 350px;
+    font-size: 25px;
+    /* flex-grow: 3; */
+    margin-top: 15px;
+    text-align: center;
+    align-items: center;
+    padding-top: 25px;
+    color: white;
+    font-weight: bolder;
+    border-radius: 20px;
+
+}
+
+.box3 {
+    width: 300px;
+    height: 350px;
+    font-size: 25px;
+    /* flex-grow: 3; */
+    margin-top: 15px;
+    text-align: center;
+    align-items: center;
+    padding-top: 25px;
+    color: white;
+    font-weight: bolder;
+    border-radius: 20px;
+}
+
+.box4 {
+    width: 300px;
+    height: 350px;
+    font-size: 25px;
+
+    margin-top: 15px;
+    text-align: center;
+    align-items: center;
+    padding-top: 25px;
+    color: white;
+    font-weight: bolder;
+    border-radius: 20px;
+}
+
+.boo {
+    font-size: 20px;
+    color: rgb(126, 122, 114);
+    padding-top: 35px;
+    margin: 10px;
+
+}
+
+.fourth {
+    margin-top: -550px;
+    color: white;
+    margin-left: 300px;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.faqbox:hover {
+    background-color: #414141;
+
+}
+
+.faqbox svg {
+    filter: invert(1);
+}
+
+.faqbox {
+    transition: all 1s ease-out;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 24px;
+    max-width: 60vw;
+    margin: 10px;
+    cursor: pointer;
+    margin-left: 300px;
+    color: white;
+
+
+}
+
+.paragraph {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Martel Sans', sans-serif;
+    height: calc(100%-100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+
+    padding: 35px;
+    flex-direction: column;
+    padding-bottom: 18px;
+
+}
+
+.para-buttons {
+    margin-left: 580px;
+
+}
+
+.questions {
+    color: white;
+    font-size: 20px;
+    margin-left: 250px;
+    padding: 60px;
+}
+
+footer {
+    color: white;
+    max-width: 40vw;
+    margin: auto;
+    padding: 60px;
+
+
+}
+
+footer {
+    padding: 40px;
+    /* Reduce if needed */
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+
+
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    column-gap: -5px;
+    margin-left: 300px;
+    /* Reduce this value or remove it */
+
+}
+
+.footer a {
+    font-size: 14px;
+    color: white;
+}
+
+select {
+    padding: 6px 10px;
+    font-size: 15px;
+
+    background-color: rgba(0, 0, 0, 0.877);
+    /* Semi-transparent black */
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    margin-left: 310px;
+    margin-top: 80PX;
+
+}
+
+/* Dropdown Arrow Styling */
+select::-ms-expand {
+    display: none;
+    /* Hides default arrow in IE/Edge */
+}
+
+select:hover {
+    background-color: rgba(32, 23, 23, 0.2);
+    /* Slight hover effect */
+    color: black;
+
+}
+
+.last {
+    font-size: 20;
+    color: white;
+    margin-left: 270px;
+    padding: 40px;
+    padding-bottom: 200px;
+
+}
+
+/* js code */
+.faqbox {
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.faqbox:hover {
+    background-color: #2d2d2d;
+}
+
+.faqbox.active {
+    background-color: #414141;
+}
+
+
+
+
+/* ========================= */
+/* 🌐 RESPONSIVE FIX START */
+/* ========================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+
+    nav {
+        margin: 0;
+        padding: 20px 40px;
+    }
+
+    .para {
+        padding: 180px 40px;
+    }
+
+    .para> :nth-child(1),
+    .para> :nth-child(2) {
+        font-size: 48px;
+    }
+
+    input {
+        width: 100%;
+        max-width: 420px;
+    }
+
+    .para-buttons {
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .first,
+    .third,
+    .fourth {
+        margin-left: 40px;
+    }
+
+    .second,
+    .container {
+        margin-left: 0;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .boxes {
+        width: 90%;
+    }
+
+    .container {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .box {
+        margin-bottom: 20px;
+    }
+
+    .faqbox {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer-item {
+        margin-left: 0;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav img {
+        width: 140px;
+    }
+
+    select {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .btn2 {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .para {
+        padding: 140px 20px;
+    }
+
+    .para> :nth-child(1),
+    .para> :nth-child(2) {
+        font-size: 34px;
+    }
+
+    .para> :nth-child(3),
+    .para> :nth-child(4) {
+        font-size: 16px;
+    }
+
+    input {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .btn3 {
+        font-size: 16px;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .first,
+    .third,
+    .fourth {
+        margin-left: 20px;
+        font-size: 22px;
+    }
+
+    .boxes img {
+        width: 160px;
+    }
+
+    .faqbox {
+        font-size: 18px;
+        max-width: 90vw;
+    }
+
+    .questions {
+        margin-left: 0;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .last {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+/* Extra Small Phones */
+@media (max-width: 480px) {
+
+    .para> :nth-child(1),
+    .para> :nth-child(2) {
+        font-size: 26px;
+    }
+
+    .faqbox {
+        font-size: 16px;
+        padding: 16px;
+    }
+
+    .boxes img {
+        width: 140px;
+    }
+}
